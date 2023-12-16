@@ -11,6 +11,7 @@ const port = process.env.SERVER_PORT;
 // middleware
 app.use(cors());
 app.use(express.json());
+app.use("/profile", express.static("./uploads"));
 // router
 app.use("/api/v1/user", userRouter);
 // global error
