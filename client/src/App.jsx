@@ -1,13 +1,12 @@
 import { TextField, Typography } from "@mui/material";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import RegisterLogin from "./pages/RegsiterLogin";
+
+import AllRoutes from "./routes/AllRoutes";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <RegisterLogin />
+      <AllRoutes />
     </div>
   );
 }

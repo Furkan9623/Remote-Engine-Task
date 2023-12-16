@@ -10,4 +10,13 @@ const registerUserApi = async (data) => {
     .then((res) => res)
     .catch((er) => er);
 };
-export { registerUserApi };
+
+// login user
+const loginUserApi = async (data) => {
+  return axios
+    .post(`${URL}/user/login`, data)
+    .then((res) => res)
+    .catch((er) => er);
+};
+
+export { registerUserApi, loginUserApi };
